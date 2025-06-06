@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const AboutSection = () => {
@@ -36,7 +35,7 @@ const AboutSection = () => {
   ];
 
   return (
-    <section className="py-20 px-6">
+    <section id="about-section" className="py-20 px-6">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="section-title">The Man Behind the Legend</h2>

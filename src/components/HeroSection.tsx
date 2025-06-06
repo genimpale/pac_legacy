@@ -33,6 +33,16 @@ const HeroSection = () => {
     return () => clearInterval(interval);
   }, [quotes.length]);
 
+  const scrollToAbout = () => {
+    const aboutSection = document.querySelector('#about-section');
+    aboutSection?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const scrollToGallery = () => {
+    const gallerySection = document.querySelector('#gallery-section');
+    gallerySection?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with parallax effect */}
@@ -70,11 +80,17 @@ const HeroSection = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <button className="px-8 py-4 bg-gradient-to-r from-tupac-gold to-yellow-500 text-tupac-black font-semibold rounded-lg hover:shadow-lg hover:shadow-tupac-gold/25 transition-all duration-300 transform hover:scale-105">
+            <button 
+              onClick={scrollToAbout}
+              className="px-8 py-4 bg-gradient-to-r from-tupac-gold to-yellow-500 text-tupac-black font-semibold rounded-lg hover:shadow-lg hover:shadow-tupac-gold/25 transition-all duration-300 transform hover:scale-105"
+            >
               Explore His Story
             </button>
-            <button className="px-8 py-4 border-2 border-tupac-gold text-tupac-gold hover:bg-tupac-gold hover:text-tupac-black transition-all duration-300 rounded-lg transform hover:scale-105">
-              Listen to Legacy
+            <button 
+              onClick={scrollToGallery}
+              className="px-8 py-4 border-2 border-tupac-gold text-tupac-gold hover:bg-tupac-gold hover:text-tupac-black transition-all duration-300 rounded-lg transform hover:scale-105"
+            >
+              View Gallery
             </button>
           </div>
         </div>

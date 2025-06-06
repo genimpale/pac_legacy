@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { X } from 'lucide-react';
 
@@ -64,7 +63,7 @@ const Gallery = () => {
     : galleryItems.filter(item => item.category === activeCategory);
 
   return (
-    <section className="py-20 px-6">
+    <section id="gallery-section" className="py-20 px-6">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-16">
           <h2 className="section-title">Visual Archives</h2>

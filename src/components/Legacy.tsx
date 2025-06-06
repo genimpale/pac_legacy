@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const Legacy = () => {
@@ -45,7 +44,7 @@ const Legacy = () => {
   ];
 
   return (
-    <section className="py-20 px-6">
+    <section id="legacy-section" className="py-20 px-6">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-16">
           <h2 className="section-title">Enduring Legacy</h2>

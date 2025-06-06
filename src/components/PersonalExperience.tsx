@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const PersonalExperience = () => {
@@ -26,7 +25,7 @@ const PersonalExperience = () => {
   ];
 
   return (
-    <section className="py-20 px-6">
+    <section id="experience-section" className="py-20 px-6">
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-16">
           <h2 className="section-title">My Personal Journey with Tupac</h2>
